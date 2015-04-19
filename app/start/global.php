@@ -18,6 +18,7 @@ ClassLoader::addDirectories(array(
 	app_path().'/models',
 	app_path().'/database/seeds',
 	app_path().'/route',
+	app_path().'/biblioteca',
 ));
 
 /*
@@ -79,3 +80,13 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+
+/*
+|--------------------------------------------------------------------------
+| Require The Composer File
+|--------------------------------------------------------------------------
+|
+*/
+
+require app_path().'/composer.php';
